@@ -1,0 +1,1 @@
+You are givin n numbers, output the sum of them mod (1e9+7).

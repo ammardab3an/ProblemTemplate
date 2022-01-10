@@ -1,0 +1,15 @@
+(type .\testcases\input\input0.txt | .\solution_1.exe) 1> .\testcases\output_1\output0.txt
+(type .\testcases\input\input1.txt | .\solution_1.exe) 1> .\testcases\output_1\output1.txt
+(type .\testcases\input\input2.txt | .\solution_1.exe) 1> .\testcases\output_1\output2.txt
+(type .\testcases\input\input3.txt | .\solution_1.exe) 1> .\testcases\output_1\output3.txt
+(type .\testcases\input\input4.txt | .\solution_1.exe) 1> .\testcases\output_1\output4.txt
+(type .\testcases\input\input5.txt | .\solution_1.exe) 1> .\testcases\output_1\output5.txt
+(type .\testcases\input\input6.txt | .\solution_1.exe) 1> .\testcases\output_1\output6.txt
+(type .\testcases\input\input7.txt | .\solution_1.exe) 1> .\testcases\output_1\output7.txt
+(type .\testcases\input\input8.txt | .\solution_1.exe) 1> .\testcases\output_1\output8.txt
+(type .\testcases\input\input9.txt | .\solution_1.exe) 1> .\testcases\output_1\output9.txt
+(type .\testcases\input\input10.txt | .\solution_1.exe) 1> .\testcases\output_1\output10.txt
+(type .\testcases\input\input11.txt | .\solution_1.exe) 1> .\testcases\output_1\output11.txt
+(type .\testcases\input\input12.txt | .\solution_1.exe) 1> .\testcases\output_1\output12.txt
+(type .\testcases\input\input13.txt | .\solution_1.exe) 1> .\testcases\output_1\output13.txt
+(type .\testcases\input\input14.txt | .\solution_1.exe) 1> .\testcases\output_1\output14.txt

@@ -1,0 +1,15 @@
+.\testcases_gen.exe 10 -10 10 0.13436424411240122 1> .\testcases\input\input0.txt
+.\testcases_gen.exe 10 -10 10 0.8474337369372327 1> .\testcases\input\input1.txt
+.\testcases_gen.exe 10 -10 10 0.763774618976614 1> .\testcases\input\input2.txt
+.\testcases_gen.exe 100 -1000 1000 0.2550690257394217 1> .\testcases\input\input3.txt
+.\testcases_gen.exe 1000 -1000 1000 0.49543508709194095 1> .\testcases\input\input4.txt
+.\testcases_gen.exe 1000 -1000000 1000000 0.4494910647887381 1> .\testcases\input\input5.txt
+.\testcases_gen.exe 1000 -1000000000 1000000000 0.651592972722763 1> .\testcases\input\input6.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.7887233511355132 1> .\testcases\input\input7.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.0938595867742349 1> .\testcases\input\input8.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.02834747652200631 1> .\testcases\input\input9.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.8357651039198697 1> .\testcases\input\input10.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.43276706790505337 1> .\testcases\input\input11.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.762280082457942 1> .\testcases\input\input12.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.0021060533511106927 1> .\testcases\input\input13.txt
+.\testcases_gen.exe 100000 -1000000000 1000000000 0.4453871940548014 1> .\testcases\input\input14.txt

@@ -64,5 +64,15 @@ int32_t main(){
     
     fastIO;
 	
+	int n;
+	cin >> n;
+
+	vi vec(n);
+	for(auto &i : vec) cin >> i;
+
+	int ans = accumulate(vec.begin(), vec.end(), 0LL);
 	
+	ans = ((ans%MOD) + MOD) % MOD;
+
+	cout << ans << endl;
 }

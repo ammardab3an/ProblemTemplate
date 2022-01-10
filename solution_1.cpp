@@ -64,4 +64,18 @@ int32_t main(){
     
     fastIO;
     
+	int n;
+	cin >> n;
+
+	int sm = 0;
+	
+	while(n--){
+
+		int a;
+		cin >> a;
+
+		sm = add(sm, a);
+	}
+
+	cout << sm << endl;
 }

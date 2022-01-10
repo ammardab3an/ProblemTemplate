@@ -21,7 +21,7 @@ int32_t main(int32_t argc, char* argv[]){
 
     assert(n <= 1e6);
     assert(min_a <= max_a);
-    assert(max_a <= INT_MAX);
+    assert(max_a <= LLONG_MAX);
 
     cout << n << endl;
     for(int i = 0; i < n; i++){
