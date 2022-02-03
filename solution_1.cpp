@@ -1,6 +1,4 @@
 
-// By AmmarDab3an - Aleppo University
-
 #include "bits/stdc++.h"
 
 using namespace std;
