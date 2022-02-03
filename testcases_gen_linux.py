@@ -1,0 +1,62 @@
+from random import seed, random
+seed(1)
+
+def testcases_gen(props, test_idx):
+    return ('./testcases_gen.exe {} 1> ./testcases/input/input{}.txt'.format(
+        props, test_idx
+    ))
+
+def answers_0(test_idx):
+    return ('(cat ./testcases/input/input{0}.txt | ./solution_0.exe) 1> ./testcases/output/output{0}.txt'.format(
+        test_idx
+    ))
+
+def answers_1(test_idx):
+    return ('(cat ./testcases/input/input{0}.txt | ./solution_1.exe) 1> ./testcases/output_1/output{0}.txt'.format(
+        test_idx
+    ))
+    
+def answers_cmp(test_idx):
+    return ('./wcmp.exe ./testcases/input/input{0}.txt ./testcases/output_1/output{0}.txt ./testcases/output/output{0}.txt'.format(
+        test_idx
+    ))
+
+def go(testcases):
+    with open("_run_all_linux.txt", "w") as output_file:
+        
+        print("rm -r testcases", file=output_file)
+        print("rm *.zip", file=output_file)
+        print("mkdir testcases", file=output_file)
+        print("mkdir testcases/input", file=output_file)
+        print("mkdir testcases/output", file=output_file)
+        print('', file=output_file)
+        
+        print("g++ -std=c++17 -O2 solution_0.cpp -o solution_0.exe", file=output_file)
+        print("g++ -std=c++17 -O2 testcases_gen.cpp -o testcases_gen.exe", file=output_file)
+        print('', file=output_file)
+        
+        for i in range(len(testcases)):
+            print(testcases_gen(testcases[i], i), file=output_file)
+        
+        print('', file=output_file)
+        
+        for i in range(len(testcases)):
+            print(answers_0(i), file=output_file)
+        
+        print('', file=output_file)
+        
+        print("zip -r testcases.zip testcases", file=output_file)
+            
+with open("testcases_gen.txt", "r") as input_file:
+    
+    testcases = input_file.read().split('\n')
+    testcases_len = len(testcases)
+    assert testcases_len > 0
+    props_len = len(testcases[0].split())
+    
+    for i in range(testcases_len):
+        assert len(testcases[i].split()) == props_len
+        testcases[i] += ' ' + str(random())
+    
+    go(testcases)
+

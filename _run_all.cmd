@@ -33,3 +33,6 @@ echo "done compairing output files"
 
 call "C:\Program Files\WinRAR\WinRAR.exe" a -afzip "testcases.zip" ".\testcases"
 echo "testacses compressed and ready for uploading"
+
+call python _run_all_linux.py
+call "C:\Program Files\WinRAR\WinRAR.exe" a -afzip "linux_reday.zip" ./solution_0.cpp ./testcases_gen.cpp ./testlib.h ./_run_all_linux.txt
